@@ -1,27 +1,3 @@
-import React from 'react';
-
-function Square({ value }) {
+export default function Square({ value }: { value: number }) {
   return <button className="square">{value}</button>;
-}
-
-export default function Board() {
-  return (
-    <>
-      <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-      </div>
-      <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-      </div>
-      <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-      </div>
-    </>
-  );
 }
